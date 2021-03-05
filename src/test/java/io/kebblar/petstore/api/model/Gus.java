@@ -1,4 +1,5 @@
 package io.kebblar.petstore.api.model;
 
-class Ok {}
+public class Gus {
 
+}
