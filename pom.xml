@@ -8,11 +8,11 @@
         <version>2.3.1.RELEASE</version> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>mx.qbits.unam</groupId>
-    <artifactId>proyecto-backend</artifactId>
+    <groupId>io.kebblar</groupId>
+    <artifactId>petstore-back</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>proyecto-backend</name>
-    <description>Linea base del proyecyo de backend para la clase de Ingeniería de Software</description>
+    <name>petstore-back</name>
+    <description>Linea base del proyecyo de backend para la clase del diplomado de Ingeniería de Software</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -22,10 +22,10 @@
         <hibernate.validator.version>6.0.13.Final</hibernate.validator.version>
         <java.el.api.version>3.0.0</java.el.api.version>
         <java.el.impl.version>2.2.6</java.el.impl.version>
-        
+
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
     </properties>
-    
+
     <repositories>
         <repository>
                 <id>mvnrepository</id>
@@ -33,15 +33,15 @@
                 <url>https://repo1.maven.org</url>
         </repository>
         <repository>
-        	<id>redhat</id>
-        	<name>rh</name>
-        	<url>https://maven.repository.redhat.com</url>
+            <id>redhat</id>
+            <name>rh</name>
+            <url>https://maven.repository.redhat.com</url>
         </repository>
-		<repository>
-			<id>nexus.ci.ultrasist.net</id>
-			<url>http://nexus.ci.ultrasist.net/repository/all/</url>
-			<name>Kebblar Repository</name>
-		</repository>
+        <repository>
+           <id>nexus.ci.ultrasist.net</id>
+           <url>http://nexus.ci.ultrasist.net/repository/all/</url>
+       <name>Kebblar Repository</name>
+    </repository>
     </repositories>
     <!--
     <distributionManagement>
@@ -81,8 +81,8 @@
 
 
         <!-- Needed for java 11 -->
-        <dependency> 
-          <groupId>javax.xml.bind</groupId> 
+        <dependency>
+          <groupId>javax.xml.bind</groupId>
           <artifactId>jaxb-api</artifactId>
         </dependency>
         <dependency>
@@ -121,7 +121,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        
+
         <!-- Spring friendly -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -143,7 +143,7 @@
             <artifactId>jasypt-spring-boot-starter</artifactId>
             <version>2.0.0</version>
         </dependency>
-        
+
         <!-- General purpose libs not only for Spring -->
         <dependency>
             <groupId>org.mockito</groupId>
@@ -163,7 +163,7 @@
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
             <version>6.4.0</version>
-        </dependency>  
+        </dependency>
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
