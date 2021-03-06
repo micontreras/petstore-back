@@ -38,7 +38,7 @@
            <url>http://nexus.ci.ultrasist.net/repository/all/</url>
            <name>Kebblar Repository</name>
        </repository>
--->
+       -->
         <repository>
             <id>redhat</id>
             <name>rh</name>
