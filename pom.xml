@@ -28,21 +28,24 @@
 
     <repositories>
         <repository>
-                <id>mvnrepository</id>
-                <name>mvnrepository</name>
-                <url>https://repo1.maven.org</url>
+           <id>mvnrepository</id>
+           <name>mvnrepository</name>
+           <url>https://repo1.maven.org</url>
         </repository>
+        <repository>
+           <id>nexus.ci.ultrasist.net</id>
+           <url>http://nexus.ci.ultrasist.net/repository/all/</url>
+           <name>Kebblar Repository</name>
+       </repository>
+       <!--
         <repository>
             <id>redhat</id>
             <name>rh</name>
             <url>https://maven.repository.redhat.com</url>
         </repository>
-        <repository>
-           <id>nexus.ci.ultrasist.net</id>
-           <url>http://nexus.ci.ultrasist.net/repository/all/</url>
-       <name>Kebblar Repository</name>
-    </repository>
+        -->
     </repositories>
+
     <!--
     <distributionManagement>
         <repository>
@@ -200,13 +203,13 @@
             <artifactId>generator</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+<!--
         <dependency>
             <groupId>mx.qbits.unam</groupId>
             <artifactId>frontend</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

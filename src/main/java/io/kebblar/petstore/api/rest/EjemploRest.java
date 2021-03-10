@@ -21,4 +21,12 @@ public class EjemploRest {
         return mapa;
     }
 
+    @GetMapping(path = "/prueba2.json", produces = "application/json; charset=utf-8")
+    public Map<String, String> prueba2() throws ServletException {
+        Map<String, String> mapa = new HashMap<>();
+        mapa.put("dato-1", "gus");
+        mapa.put("dato-2", "tavo");
+        return mapa;
+    }
+
 }
