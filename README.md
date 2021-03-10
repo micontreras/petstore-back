@@ -4,7 +4,7 @@ Pet Store app Backend
 * hola
 * adios
 
-**texto**
+**texto en negritas**
 - abc
 - xyz
 
