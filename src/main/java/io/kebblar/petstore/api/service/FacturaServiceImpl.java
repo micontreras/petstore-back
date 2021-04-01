@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import io.kebblar.petstore.api.exceptions.BusinessException;
 import io.kebblar.petstore.api.exceptions.ProductoInexistenteException;
 import io.kebblar.petstore.api.mapper.FacturaMapper;
+import io.kebblar.petstore.api.model.Criterio;
 import io.kebblar.petstore.api.model.Factura;
+import io.kebblar.petstore.api.support.SQLBuilder;
 
 @Service
 public class FacturaServiceImpl implements FacturaService{
@@ -37,6 +39,12 @@ public class FacturaServiceImpl implements FacturaService{
 			throw new BusinessException("Ocurrio un error al consultar la informacion"
 					+ e.getErrorCode());
 		}
+	}
+
+	@Override
+	public List<Integer> getPetsByCriteria(List<Criterio> criterios) {
+		SQLBuilder sqlBuilder= new SQLBuilder(criterios);
+		return this.facturaMapper.getPetsByCriteria(sqlBuilder.produceMap());
 	}
 
 }
